@@ -42,7 +42,7 @@ s.n. dasgupta
 ### Display the content of the files
 cat < file1
 ## OUTPUT
-![output](./img/(<Screenshot at 2026-07-28 15-49-37.png>))
+(./img/![output](<Screenshot at 2026-07-28 15-49-37-1.png>))
 
 
 cat < file2
