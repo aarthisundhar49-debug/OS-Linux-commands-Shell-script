@@ -762,10 +762,9 @@ var1=$[ $var1 - 25 ]
 done
 ``` 
 $ chmod 755 untiltest.sh
- ```
  ## OUTPUT
  ![output](<Screenshot at 2026-07-29 14-34-19.png>)
- ````
+ 
 cat forin1.sh 
 ```bash
 \#!/bin/bash
@@ -806,9 +805,11 @@ done
 $ chmod 755 forin2.sh
  
 $ ./forin2.sh 
+```
 ## OUTPUT
+
 ![output](<Screenshot at 2026-07-29 14-40-03.png>)
- ``````
+
 cat forin3.sh 
 ```
 ```bash
@@ -973,15 +974,14 @@ read -p "Enter your name: " name
 echo "Hello $name, welcome to my program. “
 ``` 
 $ chmod 755 exread1.sh 
-``
+```
+$ ./exread1.sh `
 ## OUTPUT
-``````
-![output](<Screenshot at 2026-07-29 15-24-05.png>)
-
-``````
-$ ./exread1.sh 
+![output](<Screenshot at 2026-07-29 15-24-05-1.png>)
+$ ./exread1.sh `
  
 cat funcex.sh
+``
 ```bash
 #!/bin/bash
 # trying to access script parameters inside a function
