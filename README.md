@@ -761,11 +761,12 @@ echo $var1
 var1=$[ $var1 - 25 ]
 done
 ``` 
-$ chmod 755 untiltest.sh
+$ chmod 755 untiltest.sh`
+$ ./forin.sh
  ## OUTPUT
  ![output](<Screenshot at 2026-07-29 14-34-19.png>)
  
-cat forin1.sh 
+
 ```bash
 \#!/bin/bash
 \#basic for command
@@ -779,6 +780,7 @@ $ chmod 755 forin1.sh
  ```
  
 cat forin2.sh 
+$./forin2.sh
 ## OUTPUT
 ![output](<Screenshot at 2026-07-29 14-37-47.png>)
 
@@ -995,8 +997,9 @@ echo "The result is $value"
 else
 echo "Usage: badtest1 a b"
 fi
-```
+``
 ## OUTPUT
+
 ![output](<Screenshot at 2026-07-29 15-26-11.png>)
  ./funcex.sh 
 
