@@ -47,24 +47,23 @@ cat < file1
 
 cat < file2
 ## OUTPUT
-
+![output](<Screenshot at 2026-07-28 16-17-57.png>)
 
 # Comparing Files
 cmp file1 file2
 ## OUTPUT
- 
+ ![output](<Screenshot at 2026-07-28 16-56-40-1.png>)
 comm file1 file2
  ## OUTPUT
-
+![output](<Screenshot at 2026-07-28 16-57-06.png>)
  
 diff file1 file2
 ## OUTPUT
-
+![output](<Screenshot at 2026-07-28 16-57-38.png>)
 
 #Filters
 
 ### Create the following files file11, file22 as follows:
-
 cat > file11
 ```
 Hello world
@@ -82,67 +81,68 @@ cat > file22
 
 cut -c1-3 file11
 ## OUTPUT
-
+![output](<Screenshot at 2026-07-28 17-11-36.png>)
 
 
 
 cut -d "|" -f 1 file22
 ## OUTPUT
-
+![output](<Screenshot at 2026-07-28 17-11-56.png>)
 
 
 cut -d "|" -f 2 file22
 ## OUTPUT
-
+![output](<Screenshot at 2026-07-28 17-12-15.png>)
 
 cat < newfile 
 ```
 Hello world
 hello world
 ^d
-````
+```
 cat > newfile 
+```
 Hello world
 hello world
- 
+ ```
 grep Hello newfile 
 ## OUTPUT
-
+![output](<Screenshot at 2026-07-28 17-35-43.png>)
 
 
 grep hello newfile 
 ## OUTPUT
-
+![output](<Screenshot at 2026-07-28 17-36-02.png>)
 
 
 
 grep -v hello newfile 
 ## OUTPUT
-
+![output](<Screenshot at 2026-07-28 17-36-23.png>)
 
 
 cat newfile | grep -i "hello"
 ## OUTPUT
-
+![output](<Screenshot at 2026-07-28 17-37-07.png>)
 
 
 
 cat newfile | grep -i -c "hello"
 ## OUTPUT
-
+![output](<Screenshot at 2026-07-28 17-36-45.png>)
 
 
 
 grep -R ubuntu /etc
 ## OUTPUT
 
-
+![output](<Screenshot at 2026-07-28 17-37-54.png>)
 
 grep -w -n world newfile   
 ## OUTPUT
+![output](<Screenshot at 2026-07-28 17-39-09.png>)
 
-
-cat < newfile 
+cat < newfile3
 ```
 Hello world
 hello world
@@ -152,7 +152,7 @@ Linux is best in this World
 ^d
 ```
 
-cat > newfile
+cat > newfile3
 ```
 Hello world
 hello world
@@ -161,62 +161,62 @@ Unix is predecessor
 Linux is best in this World
 ^d
  ```
-egrep -w 'Hello|hello' newfile 
+egrep -w 'Hello|hello' newfile3 
+## OUTPUT
+![output](<Screenshot at 2026-07-28 18-08-02.png>)
+
+
+egrep -w '(H|h)ello' newfile3 
+## OUTPUT
+![output](<Screenshot at 2026-07-28 18-09-38.png>)
+
+
+egrep -w '(H|h)ell[a-z]' newfile3 
+## OUTPUT
+![output](<Screenshot at 2026-07-28 18-12-29.png>)
+
+
+
+egrep '(^hello)' newfile3
+## OUTPUT
+![output](<Screenshot at 2026-07-28 18-11-36.png>)
+
+
+egrep '(world$)' newfile3 
+## OUTPUT
+![output](<Screenshot at 2026-07-28 18-13-24.png>)
+
+
+egrep '(World$)' newfile3 
+## OUTPUT
+![output](<Screenshot at 2026-07-28 18-13-48.png>)
+
+egrep '((W|w)orld$)' newfile3 
 ## OUTPUT
 
+![output](<Screenshot at 2026-07-28 18-14-12.png>)
 
-
-egrep -w '(H|h)ello' newfile 
+egrep '[1-9]' newfile3 
 ## OUTPUT
+![output](<Screenshot at 2026-07-28 18-14-44.png>)
 
 
-
-egrep -w '(H|h)ell[a-z]' newfile 
+egrep 'Linux.*world' newfile3 
 ## OUTPUT
+![output](<Screenshot at 2026-07-28 18-15-12.png>)
 
-
-
-
-egrep '(^hello)' newfile 
+egrep 'Linux.*World' newfile3 
 ## OUTPUT
+![output](<Screenshot at 2026-07-28 18-15-39.png>)
 
-
-
-egrep '(world$)' newfile 
+egrep l{2} newfile3
 ## OUTPUT
+![output](<Screenshot at 2026-07-28 18-16-03.png>)
 
 
-
-egrep '(World$)' newfile 
-## OUTPUT
-
-
-egrep '((W|w)orld$)' newfile 
-## OUTPUT
-
-
-
-egrep '[1-9]' newfile 
-## OUTPUT
-
-
-
-egrep 'Linux.*world' newfile 
-## OUTPUT
-
-
-egrep 'Linux.*World' newfile 
-## OUTPUT
-
-
-egrep l{2} newfile
-## OUTPUT
-
-
-
-egrep 's{1,2}' newfile
+egrep 's{1,2}' newfile3
 ## OUTPUT 
-
+![output](<Screenshot at 2026-07-28 18-16-41.png>)
 
 cat > file23
 ```
@@ -234,80 +234,81 @@ cat > file23
 
 sed -n -e '3p' file23
 ## OUTPUT
-
+![output](<Screenshot at 2026-07-28 18-36-02.png>)
 
 
 sed -n -e '$p' file23
 ## OUTPUT
-
+![output](<Screenshot at 2026-07-28 18-36-44.png>)
 
 
 sed  -e 's/Ram/Sita/' file23
 ## OUTPUT
-
+![output](<Screenshot at 2026-07-28 18-37-14.png>)
 
 
 sed  -e '2s/Ram/Sita/' file23
 ## OUTPUT
 
-
+![output](<Screenshot at 2026-07-28 18-37-55.png>)
 
 sed  '/tom/s/5000/6000/' file23
 ## OUTPUT
 
-
+![output](<Screenshot at 2026-07-28 18-38-44.png>)
 
 sed -n -e '1,5p' file23
 ## OUTPUT
 
-
+![output](<Screenshot at 2026-07-28 18-39-31.png>)
 
 sed -n -e '2,/Joe/p' file23
 ## OUTPUT
 
-
+![output](<Screenshot at 2026-07-28 18-40-24-1.png>)
 
 
 sed -n -e '/tom/,/Joe/p' file23
 ## OUTPUT
-
+![output](<Screenshot at 2026-07-28 18-40-40.png>)
 
 
 seq 10 
 ## OUTPUT
 
-
+![output](<Screenshot at 2026-07-28 18-41-06.png>)
 
 seq 10 | sed -n '4,6p'
 ## OUTPUT
 
-
+![output](<Screenshot at 2026-07-28 18-41-24.png>)
 
 seq 10 | sed -n '2,~4p'
 ## OUTPUT
-
+![output](<Screenshot at 2026-07-28 18-42-00.png>)
 
 
 seq 3 | sed '2a hello'
 ## OUTPUT
 
-
+![output](<Screenshot at 2026-07-28 18-46-55.png>)
 
 seq 2 | sed '2i hello'
 ## OUTPUT
-
+![output](<Screenshot at 2026-07-28 18-47-23.png>)
 
 seq 10 | sed '2,9c hello'
 ## OUTPUT
-
+![output](<Screenshot at 2026-07-28 18-47-42.png>)
 
 sed -n '2,4{s/^/$/;p}' file23
 ## OUTPUT
 
-
+![output](<Screenshot at 2026-07-28 18-48-03.png>)
 
 sed -n '2,4{s/$/*/;p}' file23
-
+## OUTPUT
+![output](<Screenshot at 2026-07-28 18-48-20.png>)
 
 #Sorting File content
 cat > file21
@@ -320,7 +321,7 @@ cat > file21
 ``` 
 sort file21
 ## OUTPUT
-
+![output](<Screenshot at 2026-07-28 19-04-39.png>)
 
 cat > file22
 ```
@@ -333,15 +334,16 @@ cat > file22
 ``` 
 uniq file22
 ## OUTPUT
-
+![output](<Screenshot at 2026-07-28 19-05-00.png>)
 
 
 #Using tr command
 
 cat file23 | tr [:lower:] [:upper:]
  ## OUTPUT
-
+![output](<Screenshot at 2026-07-28 19-06-26.png>)
 cat < urllist.txt
+
 ```
 www. yahoo. com
 www. google. com
@@ -356,13 +358,13 @@ www. mrcet.... com
  ```
 cat urllist.txt | tr -d ' '
  ## OUTPUT
-
+![output](<Screenshot at 2026-07-28 19-11-39.png>)
 
  
 cat urllist.txt | tr -d ' ' | tr -s '.'
 ## OUTPUT
 
-
+![output](<Screenshot at 2026-07-28 19-11-54.png>)
 
 #Backup commands
 tar -cvf backup.tar *
@@ -377,20 +379,12 @@ cd backupdir
  
 tar -tvf backup.tar
 ## OUTPUT
-
+![output](<Screenshot at 2026-07-28 19-21-10.png>)
 
 tar -xvf backup.tar
 ## OUTPUT
+![output](<Screenshot at 2026-07-28 19-38-52.png>)
 
-gzip backup.tar
-
-ls .gz
-## OUTPUT
- 
-gunzip backup.tar.gz
-## OUTPUT
-
- 
 # Shell Script
 ```
 echo '#!/bin/sh' > my-script.sh
