@@ -1086,7 +1086,7 @@ ubcdfghj
 ```
 awk -f nc.awk data.dat
 ## OUTPUT
-![output](<Screenshot at 2026-07-29 17-29-19.png>) 
+![output](<Screenshot at 2026-07-29 17-29-19-2.png>) 
  
 cat > palindrome.sh
 ```bash
@@ -1114,7 +1114,6 @@ else
 fi
 ```
 ## OUTPUT 
-![output](<Screenshot at 2026-07-29 16-28-53.png>)
-
+![output](<Screenshot at 2026-07-29 16-28-53-1.png>)
 # RESULT:
 The Commands are executed successfully.
