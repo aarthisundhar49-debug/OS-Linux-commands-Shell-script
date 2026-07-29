@@ -792,9 +792,7 @@ do
 echo “word:$test”
 done
  ```
- 
-$ chmod 755 forin2.sh
- 
+
 cat forin2.sh 
 ```bash
 \#!/bin/bash
@@ -807,13 +805,11 @@ done
 $ chmod 755 forin2.sh
  
 $ ./forin2.sh 
-```
 ## OUTPUT
 
 ![output](<Screenshot at 2026-07-29 14-40-03.png>)
 
 cat forin3.sh 
-```
 ```bash
 \#!/bin/bash
 \# another example of how not to use the for command
@@ -822,7 +818,6 @@ do
 echo "word:$test"
 done
 ```
-$ ./forin3.sh 
  
 cat forin1.sh 
 ```bash
@@ -834,7 +829,6 @@ echo The next state is $test
 done
 ```
 $ chmod 755 forin1.sh
-```
 ## OUTPUT
 ![output](<Screenshot at 2026-07-29 14-37-47-1.png>)
 
@@ -848,7 +842,6 @@ do
 echo "Visit beautiful $file“
 done
 ```
-$ chmod 777 forinfile.sh
 $ cat cities
 Hyderabad
 Alampur
@@ -857,6 +850,7 @@ Warangal
 Adilabad
 Bhadrachalam
 Khammam
+$ chmod 777 forinfile.sh
 
 ## OUTPUT
 ![output](<Screenshot at 2026-07-29 15-01-51.png>)
@@ -976,14 +970,11 @@ read -p "Enter your name: " name
 echo "Hello $name, welcome to my program. “
 ``` 
 $ chmod 755 exread1.sh 
-```
 $ ./exread1.sh `
 ## OUTPUT
 ![output](<Screenshot at 2026-07-29 15-24-05-1.png>)
-$ ./exread1.sh `
  
 cat funcex.sh
-``
 ```bash
 #!/bin/bash
 # trying to access script parameters inside a function
@@ -997,7 +988,7 @@ echo "The result is $value"
 else
 echo "Usage: badtest1 a b"
 fi
-``
+````
 ## OUTPUT
 
 ![output](<Screenshot at 2026-07-29 15-26-11.png>)
@@ -1017,7 +1008,6 @@ cat argshift.sh
 done
 ```
 $ chmod 777 argshift.sh
-``````
 $ ./argshift.sh 1 2 3
 ## OUTPUT
 
