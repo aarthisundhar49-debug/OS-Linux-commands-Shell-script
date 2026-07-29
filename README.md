@@ -393,7 +393,7 @@ echo 'echo Hello World‘; exit 0 >> my-script.sh
 chmod 755 my-script.sh
 ./my-script.sh
 ## OUTPUT
-
+![output](<Screenshot at 2026-07-29 13-25-38.png>)
  
 cat << stop > herecheck.txt
 ```
@@ -405,7 +405,7 @@ stop
 
 cat herecheck.txt
 ## OUTPUT
-
+![output](<Screenshot at 2026-07-29 13-25-56.png>)
 
 cat < scriptest.sh 
 ```bash
@@ -444,23 +444,21 @@ chmod 777 scriptest.sh
 
 ## OUTPUT
 
- 
+ ![output](<Screenshot at 2026-07-29 13-34-19.png>)
 ls file1
 ## OUTPUT
+![output](<Screenshot at 2026-07-29 13-34-43.png>)
 
 echo $?
 ## OUTPUT 
-./one
-bash: ./one: Permission denied
- 
-echo $?
-## OUTPUT 
+![output](<Screenshot at 2026-07-29 13-35-07.png>)
+
  
 abcd
  
 echo $?
  ## OUTPUT
-
+![output](<Screenshot at 2026-07-29 13-36-09.png>)
 
  
 # mis-using string comparisons
@@ -493,13 +491,13 @@ fi
 ```
 ##OUTPUT
 
-
+![output](<Screenshot at 2026-07-29 13-48-24.png>)
 
 chmod 755 strcomp.sh
  
 ./strcomp.sh 
 ## OUTPUT
-
+![output](<Screenshot at 2026-07-29 13-51-50.png>)
 
 # check file ownership
 cat < psswdperm.sh 
@@ -526,6 +524,7 @@ fi
  ```
 ./psswdperm.sh
 ## OUTPUT
+![output](<Screenshot at 2026-07-29 14-09-55.png>)
 
 # check if with file location
 cat>ifnested.sh 
@@ -572,7 +571,7 @@ fi
 
 ./ifnested.sh 
 ## OUTPUT
-
+![output](<Screenshot at 2026-07-29 14-10-11.png>)
 
 
 # using numeric test comparisons
@@ -614,8 +613,10 @@ fi
 
 $ chmod 755 iftest.sh
  
-$ ./iftest.sh 
+$ ./iftest.sh
+`` 
 ##OUTPUT
+![output](<Screenshot at 2026-07-29 14-12-43.png>)
 
 # check if a file
 cat > ifnested.sh 
@@ -665,7 +666,7 @@ $ chmod 755 ifnested.sh
  
 $ ./ifnested.sh 
 ##OUTPUT
-
+![output](<Screenshot at 2026-07-29 14-21-57.png>)
 # looking for a possible value using elif
 cat elifcheck.sh 
 ```bash
@@ -693,7 +694,7 @@ $ chmod 755 elifcheck.sh
  
 $ ./elifcheck.sh 
 ## OUTPUT
-
+![output](<Screenshot at 2026-07-29 14-23-59.png>)
 
 # testing compound comparisons
 cat> ifcompound.sh 
@@ -709,7 +710,7 @@ fi
 $ chmod 755 ifcompound.sh
 $ ./ifcompound.sh 
 ## OUTPUT
-
+![output](<Screenshot at 2026-07-29 14-25-43.png>)
 # using the case command
 cat >casecheck.sh 
 ```bash
@@ -728,7 +729,10 @@ esac
 $ chmod 755 casecheck.sh 
  
 $ ./casecheck.sh 
- 
+
+##OUTPUT
+ ![output](<Screenshot at 2026-07-29 14-27-42.png>)
+
 cat > whiletest
 ```bash
 #!/bin/bash
@@ -743,8 +747,10 @@ done
 $ chmod 755 whiletest.sh
  
 $ ./whiletest.sh
+## OUTPUT
  
- 
+ ![output](<Screenshot at 2026-07-29 14-32-28.png>)
+
 cat untiltest.sh 
 ```bash
 \#using the until command
@@ -756,9 +762,10 @@ var1=$[ $var1 - 25 ]
 done
 ``` 
 $ chmod 755 untiltest.sh
- 
- 
- 
+ ```
+ ## OUTPUT
+ ![output](<Screenshot at 2026-07-29 14-34-19.png>)
+ ````
 cat forin1.sh 
 ```bash
 \#!/bin/bash
@@ -770,9 +777,12 @@ done
  ```
  
 $ chmod 755 forin1.sh
- 
+ ```
  
 cat forin2.sh 
+## OUTPUT
+![output](<Screenshot at 2026-07-29 14-37-47.png>)
+
 ```bash
 \#!/bin/bash
 \# another example of how not to use the for command
@@ -796,8 +806,11 @@ done
 $ chmod 755 forin2.sh
  
 $ ./forin2.sh 
- 
+## OUTPUT
+![output](<Screenshot at 2026-07-29 14-40-03.png>)
+ ``````
 cat forin3.sh 
+```
 ```bash
 \#!/bin/bash
 \# another example of how not to use the for command
@@ -818,8 +831,10 @@ echo The next state is $test
 done
 ```
 $ chmod 755 forin1.sh
-
+```
 ## OUTPUT
+![output](<Screenshot at 2026-07-29 14-37-47-1.png>)
+
 cat forinfile.sh 
 ```bash
 #!/bin/bash
@@ -841,7 +856,7 @@ Bhadrachalam
 Khammam
 
 ## OUTPUT
-
+![output](<Screenshot at 2026-07-29 15-01-51.png>)
 
 cat forctype.sh 
 ```bash
@@ -854,7 +869,9 @@ done
 ````
 $ chmod 755 forctype.sh
 $ ./forctype.sh 
+```
 ## OUTPUT
+![output](<Screenshot at 2026-07-29 15-05-56-4.png>)
 
 cat forctype1.sh 
 ```bash
@@ -868,6 +885,7 @@ done
 $ chmod 755 forctype.sh
 $ ./forctype1.sh 
 ## OUTPUT
+![output](<Screenshot at 2026-07-29 15-08-48.png>)
 
 cat fornested1.sh 
 ```bash
@@ -886,7 +904,7 @@ $ chmod 755 fornested1.sh
  
 $ ./fornested1.sh 
  ## OUTPUT
-
+![output](<Screenshot at 2026-07-29 15-11-51.png>)
  
 cat forbreak.sh 
 ```bash
@@ -902,13 +920,15 @@ echo "Iteration number: $var1"
 done
 echo "The for loop is completed“
 ```
-## OUTPUT
-
 $ chmod 755 forbreak.sh
  
 $ ./forbreak.sh 
+
+## OUTPUT
+![output](<Screenshot at 2026-07-29 15-15-49.png>)
+
  
-cat forbreak.sh 
+cat continue.sh 
 ```bash
 #!/bin/bash
 # breaking out of a for loop
@@ -928,7 +948,8 @@ $ chmod 755 forcontinue.sh
  
 $ ./forcontinue.sh 
 ## OUTPUT
- 
+ ![output](<Screenshot at 2026-07-29 15-18-49.png>)
+
 cat exread.sh 
 ```bash
 #!/bin/bash
@@ -942,7 +963,7 @@ $ chmod 755 exread.sh
  
 $ ./exread.sh 
 ## OUTPUT
-
+![output](<Screenshot at 2026-07-29 15-20-45-1.png>)
 
  cat exread1.sh
 ```bash
@@ -952,11 +973,12 @@ read -p "Enter your name: " name
 echo "Hello $name, welcome to my program. “
 ``` 
 $ chmod 755 exread1.sh 
-
+``
 ## OUTPUT
+``````
+![output](<Screenshot at 2026-07-29 15-24-05.png>)
 
-
-
+``````
 $ ./exread1.sh 
  
 cat funcex.sh
@@ -975,11 +997,13 @@ echo "Usage: badtest1 a b"
 fi
 ```
 ## OUTPUT
+![output](<Screenshot at 2026-07-29 15-26-11.png>)
  ./funcex.sh 
 
  
  ./funcex.sh 1 2
-
+## OUTPUT
+![output](<Screenshot at 2026-07-29 15-27-23.png>)
  
 cat argshift.sh
 ```bash
@@ -990,9 +1014,12 @@ cat argshift.sh
 done
 ```
 $ chmod 777 argshift.sh
-
-## OUTPUT
+``````
 $ ./argshift.sh 1 2 3
+## OUTPUT
+
+![output](<Screenshot at 2026-07-29 15-29-40.png>)
+
  
  cat argshift1.sh
 ```bash
@@ -1008,9 +1035,10 @@ for (( i=0;i<$ELEMENTS;i++)); do
 done
 ```
 $ chmod 777 argshift.sh
-## OUTPUT
 $ ./argshift.sh 1 2 3
- 
+## OUTPUT
+![output](<Screenshot at 2026-07-29 15-33-21.png>)
+
 cat argshift.sh
 ```bash
 #!/bin/bash 
@@ -1022,6 +1050,7 @@ done
 set +x
 ```
 ## OUTPUT
+![output](<Screenshot at 2026-07-29 15-36-50.png>)
  ./argshift.sh 1 2 3
  
  
@@ -1046,14 +1075,15 @@ abcdfghj
 bcdfghj
 ebcdfghj
 bcdfghj
-ibcdfghj
+ibcdfg
 bcdfghj
 obcdfghj
 bcdfghj
 ubcdfghj
 ```
 awk -f nc.awk data.dat
-## OUTPUT 
+## OUTPUT
+![output](<Screenshot at 2026-07-29 17-29-19.png>) 
  
 cat > palindrome.sh
 ```bash
@@ -1081,7 +1111,7 @@ else
 fi
 ```
 ## OUTPUT 
-
+![output](<Screenshot at 2026-07-29 16-28-53.png>)
 
 # RESULT:
 The Commands are executed successfully.
